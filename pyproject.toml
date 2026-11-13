@@ -1,0 +1,12 @@
+[project]
+name = "llm-redteam-harness"
+version = "0.1.0"
+description = "Automated red-teaming harness for LLM applications: prompt injection, jailbreaks, prompt leakage, PII exfiltration."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+redteam = "redteam.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
